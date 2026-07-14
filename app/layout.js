@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import data from "./data/siteData.json";
+import { Analytics } from '@vercel/analytics/next';
 
 const jakartaSans = Plus_Jakarta_Sans({
   variable: "--font-display",
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
           <div className="bg-mesh" aria-hidden="true" />
           <div className="relative z-[1]">{children}</div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
