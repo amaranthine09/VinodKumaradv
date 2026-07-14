@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
+import Link from "next/link";
 import data from "../data/siteData.json";
 import { useTheme } from "../providers/ThemeProvider";
 
@@ -8,6 +9,17 @@ export default function Testimonials() {
   const items = data.testimonials;
   const { theme } = useTheme();
   const isLight = theme === "light";
+  const cfg = data.reviewConfig;
+
+  const [userReviews, setUserReviews] = useState([]);
+
+  // Fetch user-submitted reviews
+  useEffect(() => {
+    fetch("/api/reviews")
+      .then((r) => r.json())
+      .then((d) => { if (Array.isArray(d)) setUserReviews(d); })
+      .catch(() => {});
+  }, []);
 
   const next = useCallback(() => setCurrent((c) => (c + 1) % items.length), [items.length]);
   const prev = useCallback(() => setCurrent((c) => (c - 1 + items.length) % items.length), [items.length]);
@@ -70,7 +82,7 @@ export default function Testimonials() {
                   transition: "background 0.35s ease",
                 }}
               >
-                {/* Quote Icon (NO gold, clean black/white) */}
+                {/* Quote Icon */}
                 <i className={`fas fa-quote-left text-[3rem] opacity-10 mb-6 block ${
                   isLight ? "text-black" : "text-white"
                 }`} />
@@ -101,7 +113,7 @@ export default function Testimonials() {
                       {t.place}
                     </span>
                   </div>
-                  {/* Star Rating (Silver stars instead of gold stars) */}
+                  {/* Star Rating */}
                   <div className="ml-auto hidden sm:flex gap-0.5">
                     {[...Array(5)].map((_, k) => (
                       <i key={k} className={`fas fa-star text-[0.72rem] ${
@@ -115,7 +127,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Controls (NO gold, clean black/white border circles) */}
+        {/* Controls */}
         <div className="flex items-center justify-center gap-4">
           <button
             id="testimonial-prev"
@@ -152,6 +164,76 @@ export default function Testimonials() {
           >
             <i className="fas fa-chevron-right" />
           </button>
+        </div>
+
+        {/* User-submitted reviews grid */}
+        {userReviews.length > 0 && (
+          <div className="mt-16">
+            <h3 className={`font-[family-name:var(--font-display)] text-[clamp(1.2rem,2vw,1.6rem)] font-extrabold mb-8 text-center ${
+              isLight ? "text-black" : "text-white"
+            }`}>
+              {cfg.userReviewsTitle}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {userReviews.slice(0, 6).map((review, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-0.5"
+                  style={{
+                    background: isLight ? "#ffffff" : "#000000",
+                    borderColor: isLight ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.08)",
+                  }}
+                >
+                  <div className="flex gap-0.5 mb-3">
+                    {[1,2,3,4,5].map((s) => (
+                      <i key={s} className={`fas fa-star text-[0.65rem] ${
+                        s <= review.rating ? (isLight ? "text-black" : "text-white") : (isLight ? "text-black/15" : "text-white/15")
+                      }`} />
+                    ))}
+                  </div>
+                  <p className={`text-[0.88rem] leading-[1.7] italic mb-4 font-medium font-[family-name:var(--font-inter)] line-clamp-3 ${
+                    isLight ? "text-[#1d1d1f]" : "text-off-white"
+                  }`}>
+                    &ldquo;{review.text}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-2.5">
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[0.7rem] flex-shrink-0 border ${
+                      isLight ? "bg-[#f2f2f7] border-[#d2d2d7] text-[#1d1d1f]" : "bg-white border-transparent text-black"
+                    }`}>
+                      <i className="fas fa-user" />
+                    </div>
+                    <div>
+                      <strong className={`block text-[0.82rem] font-bold font-[family-name:var(--font-display)] ${
+                        isLight ? "text-black" : "text-white"
+                      }`}>{review.name}</strong>
+                      {review.location && (
+                        <span className={`text-[0.7rem] font-[family-name:var(--font-inter)] font-semibold ${
+                          isLight ? "text-[#555558]" : "text-gray-muted"
+                        }`}>{review.location}</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* "Share Your Experience" button */}
+        <div className="text-center mt-12">
+          <Link
+            href="/review"
+            id="share-experience-btn"
+            className={`inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-[0.92rem] font-[family-name:var(--font-inter)] border transition-all duration-300 hover:-translate-y-1 ${
+              isLight
+                ? "bg-black text-white border-black hover:bg-white hover:text-black"
+                : "bg-white text-black border-white hover:bg-black hover:text-white hover:border-white/30"
+            }`}
+          >
+            <i className="fas fa-star text-[0.82rem]" />
+            {cfg.giveOpinionButton}
+            <i className="fas fa-arrow-right text-[0.72rem]" />
+          </Link>
         </div>
       </div>
     </section>

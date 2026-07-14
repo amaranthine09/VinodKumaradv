@@ -1,37 +1,46 @@
 {
   "personal": {
-    "name": "Adv. Vinod Kumar",
+    "name": "Adv. Vinod Thakur",
     "title": "Hp High Court Shimla, District Courts, State Consumer Commission, State Consumer Forum and Arbitration",
     "court": "HP High Court",
     "location": "Shimla, HP",
     "tagline": "Committed to Justice from Day One.",
     "phone": "+91 8219284568",
     "phoneHref": "tel:+919876543210",
-    "email": "vt231329@gmail.com",
+    "email": "vinodthakur052005@gmail.com",
     "address": "Chamber B-4, Municipal Commercial Complex, Near High Court Shimla, Shimla - 171001, Himachal Pradesh, India",
     "consultationHours": "Mon–Sat: 9:00 AM – 6:00 PM"
   },
-
   "socialLinks": {
-    "linkedin": "https://linkedin.com/in/YOUR_LINKEDIN",
-    "instagram": "https://instagram.com/amaranthine__09",
+    "linkedin": "https://linkedin.com/in/vinodthakur1205",
+    "facebook": "https://facebook.com/profile.php?id=61582489664758",
+    "twitter": "https://x.com/vinodthakur_12",
     "whatsapp": "https://wa.me/+918219284568",
     "email": "mailto:vinodthakur052005@gmail.com"
   },
-
   "heroStats": [
-    { "value": 1, "suffix": "+", "label": "Year Practice" },
-    { "value": 50, "suffix": "+", "label": "Cases Handled" },
-    { "value": 100, "suffix": "%", "label": "Dedication" }
+    {
+      "value": 1,
+      "suffix": "+",
+      "label": "Year Practice"
+    },
+    {
+      "value": 4,
+      "suffix": "+",
+      "label": "Cases Handled"
+    },
+    {
+      "value": 100,
+      "suffix": "%",
+      "label": "Dedication"
+    }
   ],
-
   "typewriterPhrases": [
     "Committed to Justice from Day One.",
     "Your Rights, My Priority.",
     "Fresh Perspective. Fearless Advocacy.",
     "Building Trust, One Case at a Time."
   ],
-
   "about": {
     "sectionTitle": "A Young Advocate with a Strong Vision",
     "cards": [
@@ -44,8 +53,8 @@
         "icon": "fas fa-graduation-cap",
         "title": "Education & Enrollment",
         "items": [
-          "LLB – Himachal Pradesh University",
-          "Enrolled – Bar Council of HP (2025)",
+          "BA LLB (Hons.) – University Institute of Legal Studies (UILS), Shimla",
+          "Enrolled – Bar Council of Himachal Pradesh (2025)",
           "Practicing under Senior Advocate at HP High Court",
           "Actively attending matters in the HP High Court, Shimla"
         ]
@@ -57,48 +66,128 @@
       }
     ]
   },
-
   "practiceAreas": [
-    { "icon": "fas fa-landmark", "title": "Constitutional Law", "desc": "Assisting in matters involving fundamental rights, writ petitions, and public interest litigations before the HP High Court." },
-    { "icon": "fas fa-handshake", "title": "Civil Law", "desc": "Property disputes, contracts, injunctions, and civil suits — bringing diligent research and fresh perspective to every case." },
-    { "icon": "fas fa-gavel", "title": "Criminal Law", "desc": "Bail applications, criminal trials, appeals, and revisions — supporting clients with dedicated and principled defense." },
-    { "icon": "fas fa-home", "title": "Family & Matrimonial", "desc": "Divorce, custody, maintenance, and domestic violence matters — handled with sensitivity, empathy, and professionalism." },
-    { "icon": "fas fa-briefcase", "title": "Service & Employment", "desc": "Government service disputes, departmental inquiries, and employment matters before the High Court and tribunals." },
-    { "icon": "fas fa-leaf", "title": "Revenue & Land", "desc": "Revenue appeals, land acquisition, mutation cases, and agricultural land disputes across Himachal Pradesh courts." }
+    {
+      "icon": "fas fa-landmark",
+      "title": "Constitutional Law",
+      "desc": "Assisting in matters involving fundamental rights, writ petitions, and public interest litigations before the HP High Court."
+    },
+    {
+      "icon": "fas fa-handshake",
+      "title": "Civil Law",
+      "desc": "Property disputes, contracts, injunctions, and civil suits — bringing diligent research and fresh perspective to every case."
+    },
+    {
+      "icon": "fas fa-gavel",
+      "title": "Criminal Law",
+      "desc": "Bail applications, criminal trials, appeals, and revisions — supporting clients with dedicated and principled defense."
+    },
+    {
+      "icon": "fas fa-home",
+      "title": "Family & Matrimonial",
+      "desc": "Divorce, custody, maintenance, and domestic violence matters — handled with sensitivity, empathy, and professionalism."
+    },
+    {
+      "icon": "fas fa-briefcase",
+      "title": "Service & Employment",
+      "desc": "Government service disputes, departmental inquiries, and employment matters before the High Court and tribunals."
+    },
+    {
+      "icon": "fas fa-leaf",
+      "title": "Revenue & Land",
+      "desc": "Revenue appeals, land acquisition, mutation cases, and agricultural land disputes across Himachal Pradesh courts."
+    }
   ],
-
   "whyChooseMe": [
-    { "icon": "fas fa-user-shield", "title": "Personalized Attention", "desc": "Every case receives individual focus and a tailored legal strategy — no cookie-cutter solutions." },
-    { "icon": "fas fa-indian-rupee-sign", "title": "Transparent Fees", "desc": "Clear, upfront fee structure with no hidden charges. You know exactly what you're paying for." },
-    { "icon": "fas fa-laptop-code", "title": "Modern Legal Research", "desc": "Leveraging the latest legal databases, AI tools, and technology for thorough case preparation." },
-    { "icon": "fas fa-lock", "title": "Confidentiality Guaranteed", "desc": "Strict attorney-client privilege maintained at all times. Your information is safe and protected." },
-    { "icon": "fas fa-bell", "title": "Regular Case Updates", "desc": "Stay informed at every stage — receive timely updates on hearings, filings, and developments." },
-    { "icon": "fas fa-headset", "title": "Accessible & Responsive", "desc": "Quick response to calls, WhatsApp, and emails. Available when you need legal guidance the most." }
+    {
+      "icon": "fas fa-user-shield",
+      "title": "Personalized Attention",
+      "desc": "Every case receives individual focus and a tailored legal strategy — no cookie-cutter solutions."
+    },
+    {
+      "icon": "fas fa-indian-rupee-sign",
+      "title": "Transparent Fees",
+      "desc": "Clear, upfront fee structure with no hidden charges. You know exactly what you're paying for."
+    },
+    {
+      "icon": "fas fa-laptop-code",
+      "title": "Modern Legal Research",
+      "desc": "Leveraging the latest legal databases, AI tools, and technology for thorough case preparation."
+    },
+    {
+      "icon": "fas fa-lock",
+      "title": "Confidentiality Guaranteed",
+      "desc": "Strict attorney-client privilege maintained at all times. Your information is safe and protected."
+    },
+    {
+      "icon": "fas fa-bell",
+      "title": "Regular Case Updates",
+      "desc": "Stay informed at every stage — receive timely updates on hearings, filings, and developments."
+    },
+    {
+      "icon": "fas fa-headset",
+      "title": "Accessible & Responsive",
+      "desc": "Quick response to calls, WhatsApp, and emails. Available when you need legal guidance the most."
+    }
   ],
-
   "process": [
-    { "step": 1, "icon": "fas fa-calendar-check", "title": "Book a Consultation", "desc": "Schedule a meeting via phone, WhatsApp, or through the contact form on this website." },
-    { "step": 2, "icon": "fas fa-comments", "title": "Discuss Your Case", "desc": "Share the details of your legal matter in a confidential, no-obligation consultation session." },
-    { "step": 3, "icon": "fas fa-chess", "title": "Legal Strategy", "desc": "Receive a clear, honest assessment of your case along with a well-researched legal strategy." },
-    { "step": 4, "icon": "fas fa-balance-scale", "title": "Court Representation", "desc": "Vigorous representation in court with meticulous preparation, regular updates, and dedicated advocacy." }
+    {
+      "step": 1,
+      "icon": "fas fa-calendar-check",
+      "title": "Book a Consultation",
+      "desc": "Schedule a meeting via phone, WhatsApp, or through the contact form on this website."
+    },
+    {
+      "step": 2,
+      "icon": "fas fa-comments",
+      "title": "Discuss Your Case",
+      "desc": "Share the details of your legal matter in a confidential, no-obligation consultation session."
+    },
+    {
+      "step": 3,
+      "icon": "fas fa-chess",
+      "title": "Legal Strategy",
+      "desc": "Receive a clear, honest assessment of your case along with a well-researched legal strategy."
+    },
+    {
+      "step": 4,
+      "icon": "fas fa-balance-scale",
+      "title": "Court Representation",
+      "desc": "Vigorous representation in court with meticulous preparation, regular updates, and dedicated advocacy."
+    }
   ],
-
   "faq": [
-    { "question": "How do I book a consultation?", "answer": "You can book a consultation by calling +91 8219284568, sending a WhatsApp message, or filling out the contact form on this website. I typically respond within a few hours." },
-    { "question": "What documents should I bring for my first meeting?", "answer": "Please bring all relevant documents related to your case — court orders, FIRs, property papers, contracts, correspondence, and any previous legal opinions. If you're unsure, just bring whatever you have and we'll sort it out together." },
-    { "question": "What are your fees?", "answer": "Fees vary depending on the nature and complexity of the case. I believe in transparent pricing — the fee structure is discussed upfront during the initial consultation itself, so there are no surprises later." },
-    { "question": "How long does a typical case take?", "answer": "Timelines depend on the type of case, the court's schedule, and the complexity of the matter. Simple matters may resolve in weeks, while complex litigation can take months or years. I always set realistic expectations from the start." },
-    { "question": "Do you handle cases outside Shimla?", "answer": "Yes, I primarily practice at the HP High Court in Shimla, but I also handle matters in district courts across Himachal Pradesh. For cases outside HP, I can coordinate with local advocates." },
-    { "question": "Can I contact you after office hours for urgent matters?", "answer": "Absolutely. For urgent legal matters such as bail applications, arrests, or time-sensitive filings, you can reach me via WhatsApp or phone call outside regular hours. I understand that legal emergencies don't follow a schedule." }
+    {
+      "question": "How do I book a consultation?",
+      "answer": "You can book a consultation by calling +91 8219284568, sending a WhatsApp message, or filling out the contact form on this website. I typically respond within a few hours."
+    },
+    {
+      "question": "What documents should I bring for my first meeting?",
+      "answer": "Please bring all relevant documents related to your case — court orders, FIRs, property papers, contracts, correspondence, and any previous legal opinions. If you're unsure, just bring whatever you have and we'll sort it out together."
+    },
+    {
+      "question": "What are your fees?",
+      "answer": "Fees vary depending on the nature and complexity of the case. I believe in transparent pricing — the fee structure is discussed upfront during the initial consultation itself, so there are no surprises later."
+    },
+    {
+      "question": "How long does a typical case take?",
+      "answer": "Timelines depend on the type of case, the court's schedule, and the complexity of the matter. Simple matters may resolve in weeks, while complex litigation can take months or years. I always set realistic expectations from the start."
+    },
+    {
+      "question": "Do you handle cases outside Shimla?",
+      "answer": "Yes, I primarily practice at the HP High Court in Shimla, but I also handle matters in district courts across Himachal Pradesh. For cases outside HP, I can coordinate with local advocates."
+    },
+    {
+      "question": "Can I contact you after office hours for urgent matters?",
+      "answer": "Absolutely. For urgent legal matters such as bail applications, arrests, or time-sensitive filings, you can reach me via WhatsApp or phone call outside regular hours. I understand that legal emergencies don't follow a schedule."
+    }
   ],
-
   "ctaBanner": {
     "heading": "Need Legal Help?",
     "subheading": "Book your first consultation today. Get honest, professional legal advice tailored to your situation.",
     "buttonText": "Book Consultation Now",
     "phoneText": "Or call directly:"
   },
-
   "milestones": [
     {
       "icon": "fas fa-graduation-cap",
@@ -129,7 +218,6 @@
       "side": "right"
     }
   ],
-
   "testimonials": [
     {
       "text": "Adv. Vinod Thakur is extremely dedicated and thorough. Despite being a young advocate, his preparation for my property case was outstanding. He left no stone unturned and guided me through every step with clarity.",
@@ -147,15 +235,43 @@
       "place": "Service Matter Client, Mandi"
     }
   ],
-
   "footer": {
     "tagline": "Committed to Justice. Dedicated to Excellence.",
-    "quickLinks": ["Home", "About", "Practice Areas", "Milestones", "Contact"],
-    "practiceList": ["Constitutional Law", "Civil Law", "Criminal Law", "Family & Matrimonial", "Revenue & Land"],
+    "quickLinks": [
+      "Home",
+      "About",
+      "Practice Areas",
+      "Milestones",
+      "Contact"
+    ],
+    "practiceList": [
+      "Constitutional Law",
+      "Civil Law",
+      "Criminal Law",
+      "Family & Matrimonial",
+      "Revenue & Land"
+    ],
     "copyright": "© 2025 Adv. Vinod Thakur. All Rights Reserved.",
     "disclaimer": "⚠ This website is for informational purposes only and does not constitute legal advice."
   },
-
+  "reviewConfig": {
+    "apiUrl": "",
+    "giveOpinionButton": "Share Your Experience",
+    "submitButton": "Submit Review",
+    "submitting": "Submitting...",
+    "successMessage": "Thank you for your review! It will appear on the website shortly.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "noApiMessage": "Reviews are coming soon!",
+    "ratingLabels": ["Poor", "Fair", "Good", "Very Good", "Excellent"],
+    "pageTitle": "Rate Your Experience",
+    "pageSubtitle": "YOUR FEEDBACK MATTERS",
+    "userReviewsTitle": "Client Reviews",
+    "formFields": {
+      "name": { "label": "Your Name", "placeholder": "Enter your full name" },
+      "location": { "label": "City / Case Type", "placeholder": "e.g., Shimla / Property Dispute" },
+      "review": { "label": "Your Experience", "placeholder": "Share your experience working with Adv. Vinod Thakur..." }
+    }
+  },
   "ui": {
     "meta": {
       "title": "Adv. Vinod Thakur | Advocate – HP High Court, Shimla",
@@ -198,6 +314,10 @@
         "subtitle": "COMMON QUESTIONS",
         "title": "Frequently Asked Questions"
       },
+      "review": {
+        "subtitle": "RATINGS & REVIEWS",
+        "title": "Rate Your Experience"
+      },
       "contact": {
         "subtitle": "GET IN TOUCH",
         "title": "Schedule a Consultation",
@@ -206,11 +326,26 @@
         "formError": "Something went wrong while sending your message. Please try again.",
         "networkError": "Network error. Please check your internet connection and try again.",
         "fields": {
-          "name": { "label": "Full Name", "placeholder": "Your Full Name" },
-          "phone": { "label": "Phone Number", "placeholder": "+91 XXXXX XXXXX" },
-          "email": { "label": "Email Address", "placeholder": "your@email.com" },
-          "subject": { "label": "Legal Matter", "placeholder": "Select Area of Law" },
-          "message": { "label": "Brief Description", "placeholder": "Briefly describe your legal matter..." }
+          "name": {
+            "label": "Full Name",
+            "placeholder": "Your Full Name"
+          },
+          "phone": {
+            "label": "Phone Number",
+            "placeholder": "+91 XXXXX XXXXX"
+          },
+          "email": {
+            "label": "Email Address",
+            "placeholder": "your@email.com"
+          },
+          "subject": {
+            "label": "Legal Matter",
+            "placeholder": "Select Area of Law"
+          },
+          "message": {
+            "label": "Brief Description",
+            "placeholder": "Briefly describe your legal matter..."
+          }
         }
       }
     }

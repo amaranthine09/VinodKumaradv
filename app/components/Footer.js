@@ -19,7 +19,8 @@ export default function Footer() {
 
   const socialIcons = [
     { icon: "fab fa-linkedin-in", href: s.linkedin },
-    { icon: "fab fa-instagram",   href: s.instagram },
+    { icon: "fab fa-facebook-f",  href: s.facebook },
+    { icon: "fab fa-x-twitter",   href: s.twitter },
     { icon: "fas fa-envelope",    href: s.email },
     { icon: "fab fa-whatsapp",    href: s.whatsapp },
   ];

@@ -35,20 +35,28 @@ export default function Hero() {
   const statsRef = useRef(null);
   const started = useRef(false);
   useEffect(() => {
+    const targets = data.heroStats.map((s) => s.value);
+    const startCount = () => {
+      if (started.current) return;
+      started.current = true;
+      let frame = 0;
+      const interval = setInterval(() => {
+        frame++;
+        setCounts(targets.map((t) => Math.min(Math.floor((t / 70) * frame), t)));
+        if (frame >= 70) clearInterval(interval);
+      }, 22);
+    };
+
+    // Start immediately after a short delay (Hero is always visible on load)
+    const timer = setTimeout(startCount, 600);
+
+    // Also use IntersectionObserver as backup
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !started.current) {
-        started.current = true;
-        const targets = data.heroStats.map((s) => s.value);
-        let frame = 0;
-        const interval = setInterval(() => {
-          frame++;
-          setCounts(targets.map((t) => Math.min(Math.floor((t / 70) * frame), t)));
-          if (frame >= 70) clearInterval(interval);
-        }, 22);
-      }
-    }, { threshold: 0.3 });
+      if (e.isIntersecting) startCount();
+    }, { threshold: 0.1 });
     if (statsRef.current) obs.observe(statsRef.current);
-    return () => obs.disconnect();
+
+    return () => { obs.disconnect(); clearTimeout(timer); };
   }, []);
 
   const p = data.personal;
@@ -120,7 +128,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="flex items-center justify-center lg:justify-start glass rounded-2xl p-6">
+        <div ref={statsRef} className="flex items-center justify-center lg:justify-start glass rounded-2xl p-6">
           {data.heroStats.map((stat, i) => (
             <div key={i} className="flex items-center">
               {i > 0 && <div className={`w-px h-14 hidden sm:block ${isLight ? "bg-black/10" : "bg-white/10"}`} />}

@@ -48,7 +48,8 @@ export default function ContactPage() {
 
   const socialBtns = [
     { icon: "fab fa-linkedin-in", label: "LinkedIn",  href: s.linkedin,  cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
-    { icon: "fab fa-instagram",   label: "Instagram", href: s.instagram, cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
+    { icon: "fab fa-facebook-f",  label: "Facebook",  href: s.facebook,  cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
+    { icon: "fab fa-x-twitter",   label: "X",         href: s.twitter,   cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
     { icon: "fas fa-envelope",    label: "Email",     href: s.email,     cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
     { icon: "fab fa-whatsapp",    label: "WhatsApp",  href: s.whatsapp,  cls: isLight ? "border-black/20 text-black hover:bg-black hover:text-white" : "border-white/20 text-white hover:bg-white hover:text-black" },
   ];
